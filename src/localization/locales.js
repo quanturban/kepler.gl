@@ -19,11 +19,8 @@
 // THE SOFTWARE.
 
 export const LOCALES = {
+  zh: '简体中文',
   en: 'English',
-  fi: 'Suomi',
-  pt: 'Português',
-  es: 'Español',
-  ca: 'Català'
 };
 
 /**

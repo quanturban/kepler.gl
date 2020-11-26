@@ -18,16 +18,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import en from './en';
+import zh from './zh';
 import {flattenMessages} from 'utils/locale-utils';
 import {LOCALE_CODES} from './locales';
 
-const enFlat = flattenMessages(en);
+const zhFlat = flattenMessages(zh);
 
 export const messages = Object.keys(LOCALE_CODES).reduce(
   (acc, key) => ({
     ...acc,
-    [key]: key === 'en' ? enFlat : {...enFlat, ...flattenMessages(require(`./${key}`).default)}
+    [key]: key === 'zh' ? zhFlat : {...zhFlat, ...flattenMessages(require(`./${key}`).default)}
   }),
   {}
 );
